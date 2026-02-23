@@ -1,0 +1,139 @@
+/* Footer.css */
+.footer {
+  background-color: #0b162a;
+  color: #ffffff;
+  padding: 60px 20px 30px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.logo-icon {
+  font-size: 32px;
+  color: #ef4444;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-description {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.donation-button {
+  background-color: #fff;
+  color: #ef4444;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.donation-button:hover {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ef4444;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.icon {
+  color: #ef4444;
+  margin-top: 2px;
+}
+
+.newsletter-form {
+  position: relative;
+  margin-top: 10px;
+}
+
+.newsletter-input {
+  padding: 10px 40px 10px 12px;
+  border-radius: 4px;
+  border: none;
+  color: #000;
+}
+
+.newsletter-button {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background-color: #ef4444;
+  color: white;
+  padding: 9px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid #2c3e50;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #ccc;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul.footer-list li a {
+    color: #fff;
+    text-decoration: auto;
+}
+.social-icons a {
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ef4444;
+}
