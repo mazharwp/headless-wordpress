@@ -1,19 +1,62 @@
 // src/components/Header.js
-import { FaEnvelope, FaFacebookF, FaGift, FaInstagram, FaMapMarkerAlt, FaPinterestP, FaSearch, FaShoppingCart, FaTwitter } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import '../assets/css/header.css';
-import '../assets/css/style.css';
+
+import { useEffect, useState } from "react";
+import {
+  FaEnvelope,
+  FaFacebookF,
+  FaGift,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaPinterestP,
+  FaSearch,
+  FaShoppingCart,
+  FaTwitter,
+} from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import "../assets/css/header.css";
+import "../assets/css/style.css";
 import logo from "../assets/images/welop.png";
 
 export default function Header() {
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    checkUser();
+  }, []);
+
+  const checkUser = () => {
+    const token = localStorage.getItem("token");
+    const storedUser = localStorage.getItem("user");
+
+    if (token && storedUser) {
+      setUser(storedUser);
+    } else {
+      setUser(null);
+    }
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    setUser(null);
+    navigate("/");
+    window.location.reload(); // header refresh
+  };
+
   return (
     <header>
       {/* Top Bar */}
       <div className="topbar">
         <div className="topbar-left">
           <FaEnvelope className="icon" /> contact@example.com
-          <FaMapMarkerAlt className="icon" style={{ marginLeft: '20px' }} /> 250 Main Street, 2nd Floor, USA
+          <FaMapMarkerAlt
+            className="icon"
+            style={{ marginLeft: "20px" }}
+          />{" "}
+          250 Main Street, 2nd Floor, USA
         </div>
+
         <div className="topbar-right">
           <FaFacebookF className="social-icon" />
           <FaTwitter className="social-icon" />
@@ -25,7 +68,9 @@ export default function Header() {
       {/* Main Header */}
       <div className="main-header">
         <div className="logo">
-          <img src={logo} alt="Logo" />
+          <Link to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
         </div>
 
         <nav className="nav-menu">
@@ -37,13 +82,27 @@ export default function Header() {
 
         <div className="header-right">
           <FaSearch className="action-icon" />
+
           <div className="cart">
             <FaShoppingCart className="action-icon" />
             <span className="cart-count">0</span>
           </div>
-          <button className="donate-btn">
-            <FaGift className="gift-icon" /> Make A Donation
-          </button>
+
+          {user ? (
+            <>
+              <span style={{ marginRight: "15px", fontWeight: "bold" }}>
+                Welcome, {user}
+              </span>
+
+              <button onClick={handleLogout} className="logout-btn">
+                Logout
+              </button>
+            </>
+          ) : (
+            <Link to="/login" className="login-btn">
+              <FaGift className="gift-icon" /> Login
+            </Link>
+          )}
         </div>
       </div>
     </header>
