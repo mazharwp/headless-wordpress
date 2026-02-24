@@ -13,7 +13,7 @@ export default function PageSingle({ slug: propSlug }) {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost/landofpeace/wp-json/wp/v2/pages?slug=${slug}`)
+      .get(`https://landofpeace.wp.urdemo.website/wp-json/wp/v2/pages?slug=${slug}`)
       .then((res) => {
         if (res.data.length > 0) {
           setPage(res.data[0]);

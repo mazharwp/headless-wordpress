@@ -2,6 +2,7 @@
 import { FaEnvelope, FaFacebookF, FaGift, FaInstagram, FaMapMarkerAlt, FaPinterestP, FaSearch, FaShoppingCart, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../assets/css/header.css';
+import '../assets/css/style.css';
 import logo from "../assets/images/welop.png";
 
 export default function Header() {

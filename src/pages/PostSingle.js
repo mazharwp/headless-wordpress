@@ -8,7 +8,7 @@ export default function Post() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost/landofpeace/wp-json/wp/v2/posts?slug=${slug}&_embed`)
+      .get(`https://landofpeace.wp.urdemo.website/wp-json/wp/v2/posts?slug=${slug}&_embed`)
       .then(res => {
         if (res.data.length > 0) {
           setPost(res.data[0]);

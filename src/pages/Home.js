@@ -9,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost/landofpeace/wp-json/wp/v2/posts?_embed&per_page=6&page=${currentPage}`)
+      .get(`https://landofpeace.wp.urdemo.website/wp-json/wp/v2/posts?_embed&per_page=6&page=${currentPage}`)
       .then(res => {
         setPosts(res.data);
         const total = parseInt(res.headers['x-wp-totalpages']);

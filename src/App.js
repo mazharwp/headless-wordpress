@@ -2,10 +2,13 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
-//import Menu from './components/Menu';
+import About from './pages/About';
 import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
 import PageSingle from './pages/PageSingle';
 import PostSingle from './pages/PostSingle';
+
 
 function App() {
   return (
@@ -14,10 +17,10 @@ function App() {
       
       <main style={{ padding: '20px' }}>
         <Routes>
-          <Route path="/" element={<PageSingle slug="home" />} />
+          <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<PageSingle slug="about" />} />
-          <Route path="/contact" element={<PageSingle slug="contact" />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
 
           <Route path="/page/:slug" element={<PageSingle />} />
           <Route path="/post/:slug" element={<PostSingle />} />
