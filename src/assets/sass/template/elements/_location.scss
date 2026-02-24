@@ -1,0 +1,157 @@
+.elementor-widget-gva-location{
+   width: 100%;
+}
+.location-one{
+   &__single{
+
+   }
+   &__wrap{
+      width: 100%;
+      position: relative;
+   }
+   &__image{
+      position: relative;
+      img{
+         width: 100%;
+         height: 100%;
+         -o-object-fit: cover;
+         object-fit: cover;
+         -o-object-position: 50% 50%;
+         object-position: 50% 50%;
+      }
+   }
+   &__locations{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+   }
+   &__item{
+     position: absolute;
+     width: 38px;
+     height: 38px;
+     margin-left: -19px;
+     margin-top: -19px;
+   }
+   &__map-marker{
+      width: 15px;
+      height: 15px;
+      position: relative;
+      left: 12px;
+      top: 12px;
+      cursor: pointer;
+      &:before{
+         content: '';
+         width: 100%;
+         height: 100%;
+         border-radius: 50%;
+         position: absolute;
+         left: 0;
+         top: 0;
+         transition: all 0.35s;
+         background: $color-support-1;
+         border-radius: 50%;
+         z-index: 9;
+      }
+      &:after{
+         content: '';
+         width: 38px;
+         height: 38px;
+         display: inline-block;
+         background: $color-support-1;
+         border-radius: 50%;
+         position: absolute;
+         top: -12px;
+         left: -12px;
+         opacity: 0.32;
+         z-index: 1;
+      }
+   }
+   &__item-box{
+      opacity: 0;
+      transform: perspective(400px) rotateX(90deg) translateY(10px);
+      transform-origin: bottom;
+      transition-delay: .1s;
+      transition-timing-function: ease-in-out;
+      transition-duration: .5s;
+      transition-property: all;
+      position: absolute;
+      width: 290px;
+      bottom: 100%;
+      margin-bottom: 5px;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+      right: -50px;
+      z-index: 11;
+   }
+   &__item-popup{
+      background-color: $white;
+      border-radius: 10px;
+      box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      border: 5px solid $white;
+      position: relative;
+      &:before{
+         content: "";
+         position: absolute;
+         bottom: -20px;
+         right: 65px;
+         border-bottom: 15px solid transparent;
+         border-right: 15px solid $white;
+      }
+   }
+   &__item-content{
+      width: 100%;
+      position: relative;
+      padding: 10px;
+      display: flex;
+   }
+   &__content{
+      width: calc(100% - 75px);
+      flex: 0 0 calc(100% - 75px);
+      padding-left: 10px;
+   }
+   &__title{
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: $headings-color;
+   }
+   &__link{
+      font-size: 12px;
+      color: $theme-color;
+      margin-top: 15px;
+      i{
+         margin-left: 10px;
+      }
+   }
+   &__item-image{
+      width: 75px;
+      flex: 0 0 75px;
+   }
+   &__item{
+      &:hover{
+         .location-one__map-marker:before{
+            background: $theme-color;
+            @include animation(beat 1.5s linear infinite);
+         }
+         .location-one__map-marker:after{
+            background: $theme-color;
+         }
+         .location-one__item-box{
+            opacity: 1.0;
+            transform: perspective(400px) rotateX(0deg) translateY(0);
+            transition-delay: .3s;
+            transition-timing-function: ease-in-out;
+            transition-duration: .5s;
+            transition-property: all;
+         }
+      }
+      &.active{
+         .location-one__map-marker:before{
+            background: $theme-color;
+            @include animation(beat 1.5s linear infinite);
+         }
+      }
+   }
+}

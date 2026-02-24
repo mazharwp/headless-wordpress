@@ -13,8 +13,11 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
+import "../assets/css/bootstrap.css";
+import "../assets/css/custom_script.css";
 import "../assets/css/header.css";
-import "../assets/css/style.css";
+import "../assets/css/icons/fonts/icomoon.svg";
+import "../assets/css/template.css";
 import logo from "../assets/images/welop.png";
 
 export default function Header() {

@@ -1,0 +1,32 @@
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+
+//Fonts
+// --------------------------------------------------
+$font-icon-awesome         : 'Font Awesome 5 Free' !default;
+// Colors
+$white                     : #ffffff !default;
+$nocolor                   : transparent !default;
+$theme-color               : var(--e-global-color-primary) !default;
+$theme-color-2             : var(--e-global-color-secondary) !default;
+$color-support-1           : var(--#{$variable-prefix}color-support-1) !default;
+$color-support-2           : var(--#{$variable-prefix}color-support-2) !default;
+$color-support-3           : var(--#{$variable-prefix}color-support-3) !default;
+$theme-color-black         : #1E2436 !default;
+$bg-gray                   : #F3F0EC !default; 
+$bg-input                  : #FFF !default; 
+$bg-input-gray             : #EEF5F7 !default;
+$color-gray                : #F3F0EC !default;
+
+$font-second               : var(--welowe-font-family-second);
+
+$footer-bg-color           : var(--#{$variable-prefix}footer-bg-color) !default;
+$footer-color              : var(--#{$variable-prefix}footer-color) !default;
+$footer-color-link         : var(--#{$variable-prefix}footer-color-link) !default;
+$footer-color-link-hover   : var(--#{$variable-prefix}footer-color-link-hover) !default;
+// Variables
+// --------------------------------------------------
+$image-theme-path-base  :'../images/' !default;
+$font-path              : '../fonts/';
+$woo-font-path          : '../fonts/woocommerce/' !default;
+

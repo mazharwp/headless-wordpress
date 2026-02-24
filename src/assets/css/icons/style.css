@@ -1,0 +1,463 @@
+@font-face {
+  font-family: 'wicomoon';
+  src: url('fonts/icomoon.eot?orkqwr');
+  src: url('fonts/icomoon.eot?orkqwr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?orkqwr') format('truetype'),
+    url('fonts/icomoon.woff?orkqwr') format('woff'),
+    url('fonts/icomoon.svg?orkqwr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.elementor-icons-manager__tab__item__icon.fi{font-size: 40px;}
+
+[class^="wicon-"],[class*=" wicon-"] {
+  font-family: 'wicomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  display: inline-block;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.wicon-web:before {
+  content: "\e90b";
+}
+.wicon-chat:before {
+  content: "\e91a";
+}
+.wicon-speech-bubble:before {
+  content: "\e91b";
+}
+.wicon-plus1:before {
+  content: "\e91d";
+}
+.wicon-minus:before {
+  content: "\e91e";
+}
+.wicon-search:before {
+  content: "\e91f";
+}
+.wicon-call:before {
+  content: "\e920";
+}
+.wicon-location1:before {
+  content: "\e922";
+}
+.wicon-tshirt:before {
+  content: "\e926";
+}
+.wicon-video-camera:before {
+  content: "\e927";
+}
+.wicon-project-management:before {
+  content: "\e928";
+}
+.wicon-salad:before {
+  content: "\e929";
+}
+.wicon-reading-book:before {
+  content: "\e92a";
+}
+.wicon-crowdfunding-5:before {
+  content: "\e92b";
+}
+.wicon-badge:before {
+  content: "\e92e";
+}
+.wicon-support1:before {
+  content: "\e92f";
+}
+.wicon-pin-2:before {
+  content: "\e933";
+}
+.wicon-phone-call1:before {
+  content: "\e934";
+}
+.wicon-account:before {
+  content: "\e935";
+}
+.wicon-cyborg:before {
+  content: "\e936";
+}
+.wicon-reading-book-1:before {
+  content: "\e937";
+}
+.wicon-success:before {
+  content: "\e93b";
+}
+.wicon-budget:before {
+  content: "\e93c";
+}
+.wicon-mission-2:before {
+  content: "\e93e";
+}
+.wicon-mission-3:before {
+  content: "\e93f";
+}
+.wicon-relationship:before {
+  content: "\e940";
+}
+.wicon-trusted:before {
+  content: "\e941";
+}
+.wicon-cost-saving:before {
+  content: "\e942";
+}
+.wicon-recommend:before {
+  content: "\e943";
+}
+.wicon-group:before {
+  content: "\e944";
+}
+.wicon-campaign:before {
+  content: "\e945";
+}
+.wicon-confirmation:before {
+  content: "\e947";
+}
+.wicon-video-camera-1:before {
+  content: "\e948";
+}
+.wicon-lamp:before {
+  content: "\e949";
+}
+.wicon-mountain:before {
+  content: "\e94a";
+}
+.wicon-rocket:before {
+  content: "\e94b";
+}
+.wicon-crowdfunding-6:before {
+  content: "\e94d";
+}
+.wicon-invention-1:before {
+  content: "\e94e";
+}
+.wicon-email:before {
+  content: "\e94f";
+}
+.wicon-pin:before {
+  content: "\e951";
+}
+.wicon-networking:before {
+  content: "\e952";
+}
+.wicon-photograph:before {
+  content: "\e953";
+}
+.wicon-stethoscope:before {
+  content: "\e954";
+}
+.wicon-skincare:before {
+  content: "\e955";
+}
+.wicon-computer:before {
+  content: "\e956";
+}
+.wicon-checkmark:before {
+  content: "\e958";
+}
+.wicon-mission:before {
+  content: "\e959";
+}
+.wicon-team:before {
+  content: "\e95b";
+}
+.wicon-increment:before {
+  content: "\e95d";
+}
+.wicon-right-arrow:before {
+  content: "\e95f";
+}
+.wicon-left-arrow:before {
+  content: "\e960";
+}
+.wicon-handshake:before {
+  content: "\e961";
+}
+.wicon-shopping-cart-1:before {
+  content: "\e964";
+}
+.wicon-shopping-cart:before {
+  content: "\e965";
+}
+.wicon-camera:before {
+  content: "\e966";
+}
+.wicon-video-camera-2:before {
+  content: "\e967";
+}
+.wicon-camera-1:before {
+  content: "\e968";
+}
+.wicon-donate:before {
+  content: "\e900";
+}
+.wicon-charity:before {
+  content: "\e901";
+}
+.wicon-share:before {
+  content: "\e902";
+}
+.wicon-drops:before {
+  content: "\e903";
+}
+.wicon-kindness:before {
+  content: "\e904";
+}
+.wicon-donate-1:before {
+  content: "\e905";
+}
+.wicon-health:before {
+  content: "\e906";
+}
+.wicon-non-profit-organization:before {
+  content: "\e907";
+}
+.wicon-right:before {
+  content: "\e908";
+}
+.wicon-calendar:before {
+  content: "\e909";
+}
+.wicon-location:before {
+  content: "\e90a";
+}
+.wicon-maps-and-flags:before {
+  content: "\e90c";
+}
+.wicon-play-button-arrowhead:before {
+  content: "\e90d";
+}
+.wicon-check-mark:before {
+  content: "\e90e";
+}
+.wicon-check:before {
+  content: "\e90f";
+}
+.wicon-service:before {
+  content: "\e910";
+}
+.wicon-approved:before {
+  content: "\e911";
+}
+.wicon-network:before {
+  content: "\e912";
+}
+.wicon-medal:before {
+  content: "\e913";
+}
+.wicon-donation:before {
+  content: "\f101";
+}
+.wicon-phone-2:before {
+  content: "\f102";
+}
+.wicon-star:before {
+  content: "\f103";
+}
+.wicon-fruit:before {
+  content: "\f104";
+}
+.wicon-medicine:before {
+  content: "\f105";
+}
+.wicon-education:before {
+  content: "\f106";
+}
+.wicon-house:before {
+  content: "\f107";
+}
+.wicon-quote:before {
+  content: "\f108";
+}
+.wicon-charity-2:before {
+  content: "\f109";
+}
+.wicon-volunteer:before {
+  content: "\f10a";
+}
+.wicon-debit-card:before {
+  content: "\f10b";
+}
+.wicon-solidarity:before {
+  content: "\f10c";
+}
+.wicon-nature:before {
+  content: "\f10d";
+}
+.wicon-agronomy:before {
+  content: "\f10e";
+}
+.wicon-wind-energy:before {
+  content: "\f10f";
+}
+.wicon-recycling:before {
+  content: "\f110";
+}
+.wicon-container:before {
+  content: "\f111";
+}
+.wicon-ocean:before {
+  content: "\f112";
+}
+.wicon-forest:before {
+  content: "\f113";
+}
+.wicon-polar-bear:before {
+  content: "\f114";
+}
+.wicon-igloo:before {
+  content: "\f115";
+}
+.wicon-planet-earth:before {
+  content: "\f116";
+}
+.wicon-environment:before {
+  content: "\f117";
+}
+.wicon-ecological:before {
+  content: "\f118";
+}
+.wicon-forest-1:before {
+  content: "\f119";
+}
+.wicon-quotes:before {
+  content: "\f11a";
+}
+.wicon-quote-1:before {
+  content: "\f11b";
+}
+.wicon-question:before {
+  content: "\f11c";
+}
+.wicon-solidarity-1:before {
+  content: "\f11d";
+}
+.wicon-help:before {
+  content: "\f11e";
+}
+.wicon-map:before {
+  content: "\f11f";
+}
+.wicon-envelope:before {
+  content: "\f120";
+}
+.wicon-phone-call:before {
+  content: "\f14c";
+}
+.wicon-chat-2:before {
+  content: "\f14d";
+}
+.wicon-donation-1:before {
+  content: "\f14e";
+}
+.wicon-adoption:before {
+  content: "\f14f";
+}
+.wicon-support:before {
+  content: "\f150";
+}
+.wicon-message:before {
+  content: "\f151";
+}
+.wicon-right-arrow-2:before {
+  content: "\f152";
+}
+.wicon-exploration:before {
+  content: "\f153";
+}
+.wicon-college:before {
+  content: "\f154";
+}
+.wicon-charity-3:before {
+  content: "\f155";
+}
+.wicon-checked:before {
+  content: "\f156";
+}
+.wicon-message-1:before {
+  content: "\f157";
+}
+.wicon-generous:before {
+  content: "\f15a";
+}
+.wicon-comment:before {
+  content: "\f15b";
+}
+.wicon-delete:before {
+  content: "\f15c";
+}
+.wicon-maternity:before {
+  content: "\f15d";
+}
+.wicon-quote-2:before {
+  content: "\f15e";
+}
+.wicon-clipboard:before {
+  content: "\f15f";
+}
+.wicon-cheque:before {
+  content: "\f161";
+}
+.wicon-coin:before {
+  content: "\f162";
+}
+.wicon-water:before {
+  content: "\f163";
+}
+.wicon-heart:before {
+  content: "\f165";
+}
+.wicon-heart-1:before {
+  content: "\f166";
+}
+.wicon-fast-food:before {
+  content: "\f167";
+}
+.wicon-phone:before {
+  content: "\f168";
+}
+.wicon-handshake-2:before {
+  content: "\f169";
+}
+.wicon-address:before {
+  content: "\f16a";
+}
+.wicon-left-arrow-2:before {
+  content: "\f16b";
+}
+.wicon-charity-4:before {
+  content: "\f16d";
+}
+.wicon-focus:before {
+  content: "\f16e";
+}
+.wicon-magnifying-glass:before {
+  content: "\f16f";
+}
+.wicon-donation-2:before {
+  content: "\f170";
+}
+.wicon-check-2:before {
+  content: "\f171";
+}
+.wicon-dove:before {
+  content: "\f172";
+}
+.wicon-graduation:before {
+  content: "\f173";
+}
+.wicon-health-check:before {
+  content: "\f174";
+}
+.wicon-star-2:before {
+  content: "\f176";
+}
+.wicon-email-3:before {
+  content: "\f177";
+}
